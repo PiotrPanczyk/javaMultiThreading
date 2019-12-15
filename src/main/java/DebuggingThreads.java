@@ -11,7 +11,8 @@ public class DebuggingThreads {
                 Thread.currentThread().setPriority(Thread.MAX_PRIORITY);
 
                 System.out.println("Starting thread: " + Thread.currentThread().getName());
-                System.out.println(Thread.currentThread().getName()+" priority is: "+Thread.currentThread().getPriority());
+                System.out.println(Thread.currentThread().getName()+
+                        " priority is: " +Thread.currentThread().getPriority());
                 throw new RuntimeException("Intentional Exception");
             }
         });
